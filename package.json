@@ -1,0 +1,30 @@
+{
+  "name": "@kasejs/app",
+  "version": "0.0.1",
+  "description": "Example KaseJS application",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && tsup",
+    "build:watch": "tsup --watch",
+    "start": "node dist/index.js",
+    "dev": "tsx --watch src/index.ts",
+    "format": "prettier --write \"src/**/*.{ts,js,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,js,json}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/node": "^22.13.9",
+    "@vitest/coverage-v8": "^3.0.8",
+    "pino-pretty": "^13.0.0",
+    "prettier": "^3.5.2",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}
